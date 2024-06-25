@@ -28,8 +28,11 @@ url: "https://gkstmdwn.github.io"
 github:
   username: gkstmdwn # change to your github username
 
-twitter:
-  username: twitter_username # change to your twitter username
+# twitter:
+#   username: twitter_username # change to your twitter username
+
+instagram:
+  username: syuke0118
 
 social:
   # Change to your full name.
