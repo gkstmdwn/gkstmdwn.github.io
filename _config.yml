@@ -121,7 +121,7 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: "gkstmdwn\gkstmdwn.github.io"
+    repo: "gkstmdwn/gkstmdwn.github.io"
     repo_id: "R_kgDOMN1Lhg"
     category: "General"
     category_id: "DIC_kwDOMN1Lhs4CgY9V"
