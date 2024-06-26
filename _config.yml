@@ -121,13 +121,13 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: gkstmdwn\gkstmdwn.github.io
-    repo_id: R_kgDOMN1Lhg
-    category: General
-    category_id: DIC_kwDOMN1Lhs4CgY9V
+    repo: "gkstmdwn\gkstmdwn.github.io"
+    repo_id: "R_kgDOMN1Lhg"
+    category: "General"
+    category_id: "DIC_kwDOMN1Lhs4CgY9V"
     mapping: # optional, default to 'pathname'
     strict: # optional, default to '0'
-    input_position: top # optional, default to 'bottom'
+    input_position: "top" # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
