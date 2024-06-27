@@ -136,7 +136,7 @@ $$P(\cup_{i=1}^{n}A_i)=\sum_i=1^{n}P(A_i)$$
 
 #### Theorem 1.3
 $A_1 , \ A_2, \ ... \ , \ A_n$: partition of $\Omega$  
-> partition means that $\cup_{i=1}^{n}A_i=\Omega, \; A_1 , \ A_2, \ ... \ , \ A_n \$are pairwise disjoint
+> partition means that $\cup_{i=1}^{n}A_i=\Omega, \;\text{and} \; A_1 , \ A_2, \ ... \ , \ A_n \$are pairwise disjoint
 {: .prompt-tip }
 
 $$P(E)=\sum_{i=1}^nP(E\cap A_i)$$  
