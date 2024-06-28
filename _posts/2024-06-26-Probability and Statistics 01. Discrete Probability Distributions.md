@@ -1,6 +1,6 @@
 ---
 title: Probability and Statistics 01. Dicrete Probability Distributions
-date: 2024-05-26 13:15:00 +0900
+date: 2024-06-26 13:15:00 +0900
 categories: [Mathematics, Probability and Statistics]
 tags: [math, probability_and_statistics, english]     # TAG names should always be lowercase
 toc: true
