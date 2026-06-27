@@ -1,0 +1,12 @@
+base_url = "https://gkstmdwn-image-worker.gkstmdwn-blog-images.workers.dev"
+bucket = "gkstmdwn-blog-images"
+worker_project_dir = "../../gkstmdwn-image-worker"
+
+default_prefix = "blog"
+source_dir = "source"
+generated_dir = ".generated"
+manifest_file = "manifest.json"
+
+max_width = 1400
+webp_quality = 82
+cache_control = "public, max-age=31536000, immutable"

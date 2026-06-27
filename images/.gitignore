@@ -1,0 +1,7 @@
+source/
+.generated/
+.env
+config.local.toml
+__pycache__/
+*.pyc
+

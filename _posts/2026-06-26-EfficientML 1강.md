@@ -35,7 +35,7 @@ HAN Lab의 연구는 크게 두 축으로 볼 수 있다.
 
 ## 1. AI가 요구하는 연산량이 하드웨어의 공급보다 빠르게 증가한다
 
-![alt text](https://1drv.ms/i/c/01f9a177b0d453f2/IQR1dVBYLzAUTbhDdI9HKAHWAUmnlwCV2mIwUPLxNCorcQs?width=1231&height=624)
+![GPU vs Model Size Comparison](..\images\source\GPU vs Model Size.png)
 위 그림은 model size와 GPU memory의 증가 속도를 비교한다. Transformer 이후 모델의 parameter 수는 빠르게 증가했지만, 단일 가속기의 메모리 용량은 같은 속도로 커지지 않았다. 모델이 메모리에 들어가지 않으면 여러 GPU로 나눠야 하고, 이때 장치 사이의 통신 비용까지 발생한다. 따라서 더 큰 하드웨어만 기다리는 것으로는 부족하며, model compression을 통해 AI computing의 수요와 hardware computing의 공급 사이 간격을 줄여야 한다.
 
 ## 2. 연산뿐 아니라 data movement가 비싸다
