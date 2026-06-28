@@ -55,6 +55,14 @@ SUPPORTED_EXTENSIONS = {
     ".tiff",
     ".webp",
 }
+VERIFY_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/137.0 Safari/537.36"
+    ),
+    "Accept": "image/avif,image/webp,image/*,*/*;q=0.8",
+}
 
 
 class PublishError(RuntimeError):
@@ -476,7 +484,9 @@ def upload_with_wrangler(
 
 
 def verify_public_url(url: str) -> None:
-    request = urllib.request.Request(url, method="HEAD")
+    # Cloudflare blocks urllib's default Python-urllib User-Agent with a 403.
+    # Use the same headers as a normal browser image request for verification.
+    request = urllib.request.Request(url, method="HEAD", headers=VERIFY_HEADERS)
     try:
         with urllib.request.urlopen(request, timeout=20) as response:
             if response.status != 200:

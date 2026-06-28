@@ -1,5 +1,14 @@
 {
-  "version": 1,
-  "items": {}
+  "items": {
+    "efficientml/lec01/GPU vs Model Size Comparison.webp": {
+      "height": 624,
+      "sha256": "63d721df50693e6ab85a2f860dca818497ff3664a3eba4551e9786eaa85a0cbc",
+      "size_bytes": 47970,
+      "source": "GPU vs Model Size.png",
+      "uploaded_at": "2026-06-27T15:35:03.386386+00:00",
+      "url": "https://gkstmdwn-image-worker.gkstmdwn-blog-images.workers.dev/efficientml/lec01/GPU%20vs%20Model%20Size%20Comparison.webp",
+      "width": 1231
+    }
+  },
+  "version": 1
 }
-

@@ -4,6 +4,7 @@ import json
 import sys
 import tempfile
 import unittest
+from email.message import Message
 from pathlib import Path
 from unittest import mock
 
@@ -82,6 +83,25 @@ class ReplacementTests(unittest.TestCase):
             publish_images.replace_targets(text, replacements),
             "![a](https://x/a.webp) and ![b](https://x/b.webp)",
         )
+
+
+class VerificationTests(unittest.TestCase):
+    def test_verification_uses_browser_headers(self) -> None:
+        headers = Message()
+        headers["Content-Type"] = "image/webp"
+        response = mock.MagicMock()
+        response.status = 200
+        response.headers = headers
+        response.__enter__.return_value = response
+
+        with mock.patch.object(
+            publish_images.urllib.request, "urlopen", return_value=response
+        ) as urlopen:
+            publish_images.verify_public_url("https://images.example/test.webp")
+
+        request = urlopen.call_args.args[0]
+        self.assertIn("Mozilla/5.0", request.get_header("User-agent"))
+        self.assertIn("image/webp", request.get_header("Accept"))
 
 
 class PipelineTests(unittest.TestCase):
